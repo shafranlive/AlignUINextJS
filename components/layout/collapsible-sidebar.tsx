@@ -29,18 +29,18 @@ interface NavItem {
 }
 
 const navItems: NavItem[] = [
-  { label: 'Dashboard', icon: RiLayoutGridLine, href: '/demo' },
-  { label: 'Documents', icon: RiFileTextLine, href: '/demo/documents' },
-  { label: 'Users', icon: RiUserLine, href: '/demo/users' },
-  { label: 'Analytics', icon: RiPieChartLine, href: '/demo/analytics' },
-  { label: 'Messages', icon: RiMailLine, href: '/demo/messages' },
-  { label: 'Files', icon: RiFolderLine, href: '/demo/files' },
-  { label: 'Calendar', icon: RiCalendarLine, href: '/demo/calendar' },
-  { label: 'Settings', icon: RiSettings3Line, href: '/demo/settings' },
+  { label: 'Home', icon: RiLayoutGridLine, href: '/' },
+  { label: 'Dashboard', icon: RiPieChartLine, href: '/dashboard' },
+  { label: 'Documents', icon: RiFileTextLine, href: '/documents' },
+  { label: 'Users', icon: RiUserLine, href: '/users' },
+  { label: 'Messages', icon: RiMailLine, href: '/messages' },
+  { label: 'Files', icon: RiFolderLine, href: '/files' },
+  { label: 'Calendar', icon: RiCalendarLine, href: '/calendar' },
+  { label: 'Settings', icon: RiSettings3Line, href: '/settings' },
 ];
 
 export function CollapsibleSidebar({ collapsed, onToggle }: SidebarProps) {
-  const [activeItem, setActiveItem] = useState('Dashboard');
+  const [activeItem, setActiveItem] = useState('Home');
 
   return (
     <aside

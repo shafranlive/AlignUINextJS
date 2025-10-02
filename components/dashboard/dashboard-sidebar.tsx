@@ -191,6 +191,13 @@ export function DashboardSidebar({ collapsed, onToggle }: DashboardSidebarProps)
         {!collapsed && (
           <div className='border-t border-stroke-soft-200 p-3'>
             <Link
+              href='/'
+              className='flex items-center gap-3 rounded-lg px-3 py-2.5 text-paragraph-sm text-text-sub-600 transition-all duration-200 hover:bg-bg-weak-50 hover:text-text-strong-950'
+            >
+              <RiLayoutGridLine className='size-5' />
+              <span>Main App</span>
+            </Link>
+            <Link
               href='/dashboard/support'
               className='flex items-center gap-3 rounded-lg px-3 py-2.5 text-paragraph-sm text-text-sub-600 transition-all duration-200 hover:bg-bg-weak-50 hover:text-text-strong-950'
             >
