@@ -11,6 +11,12 @@ export default function Home() {
         </h1>
 
         <div className='mt-6 flex gap-4'>
+          <Button.Root variant='primary' asChild>
+            <Link href='/dashboard'>
+              View Dashboard
+            </Link>
+          </Button.Root>
+
           <Button.Root variant='neutral' asChild>
             <a
               href='https://github.com/alignui/alignui-nextjs-typescript-starter'
